@@ -11,7 +11,7 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var myTableView: UITableView!
-    var objects = [NewsItem]()
+    var objects:[NewsItem] = []
     var reachability = Reachability(hostName: "www.apple.com")
     lazy var session = { return URLSession(configuration: .default) }()
     
